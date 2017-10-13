@@ -1,7 +1,7 @@
 # docswarm
 
 ### Prerequisites
-
+- You need 2 ubuntu nodes i.e. one host will be swarm master and other node will act as a worker node. 
 - Make sure docker service is installed on the host (say ubuntu). Refer [docker setup](dockerSetup.sh) file docker service installation.
 
 ### Setup
