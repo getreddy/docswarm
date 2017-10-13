@@ -17,7 +17,7 @@
 ` cp microproj/build/libs/docMicroservice-0.1.0.jar jars/` <br/>
 
 2) Build docker image <br/>
-
+// Below command will make use of [Dockerfile] (Dockerfile)
 `sudo docker build -t ubuntuswarmtest .`
 
 
