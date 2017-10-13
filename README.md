@@ -16,9 +16,11 @@
 ` mkdir jars` <br/>
 ` cp microproj/build/libs/docMicroservice-0.1.0.jar jars/` <br/>
 
+2) Build docker image
 
 
-2) Create **overlay** network. 
+
+3) Create **overlay** network. 
   
   Docker introduced user-defined bridge networks to control which containers can communicate with each other, and also to   enable automatic DNS resolution of container names to IP addresses. 
   
