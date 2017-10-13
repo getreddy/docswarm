@@ -41,7 +41,7 @@ Run below command on master node : <br/>
 copy and paste output of below command on worker node. <br/>
 `sudo docker swarm join-token worker` <br/>
 confirm the setup by running the below command on master node: <br/>
-` sudo docker node ls` <br/>
+` sudo docker node ls` <br/> 
 
 
 
