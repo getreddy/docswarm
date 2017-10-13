@@ -35,10 +35,10 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
   
   `sudo docker network create  --attachable -d overlay overnet`
   
- 3) create swarm cluster. <br/>
-- Run below command on master node : <br/>
+ 3) create **swarm cluster**. <br/>
+Run below command on master node : <br/>
 `sudo docker swarm init` <br/>
-copy and paste output of below command in worker node.
+copy and paste output of below command on worker node. <br/>
 `sudo docker swarm join-token worker` <br/>
 confirm the setup by running the below command on master node: <br/>
 ` sudo docker node ls` <br/>
