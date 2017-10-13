@@ -9,7 +9,7 @@
 
 Follow step 1 and 2 on both the nodes i.e. master and worker. 
 
-1) Build microproj <br/>
+1) **Build microservice** project <br/>
 ` git clone https://github.com/getreddy/docswarm.git` <br/>
 `cd microproj` <br />
 // Below command will build required jar files under microproj/build/libs <br />
@@ -19,7 +19,7 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
 ` mkdir jars` <br/>
 ` cp microproj/build/libs/docMicroservice-0.1.0.jar jars/` <br/>
 
-2) Build docker image <br/>
+2) Build **docker image** <br/>
  Below command will make use of [docker file](Dockerfile) <br/>
 `sudo docker build -t ubuntuswarmtest .`
 
