@@ -25,7 +25,7 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
 
 
 
-3) Create **overlay** network. 
+4) Create **overlay** network. 
   
   Docker introduced user-defined bridge networks to control which containers can communicate with each other, and also to   enable automatic DNS resolution of container names to IP addresses. 
   
