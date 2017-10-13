@@ -12,6 +12,10 @@
 // Below command will build required jar files under microproj/build/libs <br />
 'gradlew clean && gradlew build' <br />
 // Container will make use of this jar file by launching command as 'java -jar docMicroservice-0.1.0.jar'<br />
+' cd ..' <br/>
+' mkdir jars' <br/>
+' cp microproj/build/libs/docMicroservice-0.1.0.jar jars/' <br/>
+
 
 
 2) Create **overlay** network. 
