@@ -8,13 +8,13 @@
 
 1) Build microproj 
 
-'cd microproj' <br />
+`cd microproj` <br />
 // Below command will build required jar files under microproj/build/libs <br />
-'gradlew clean && gradlew build' <br />
+`gradlew clean && gradlew build` <br />
 // Container will make use of this jar file by launching command as 'java -jar docMicroservice-0.1.0.jar'<br />
-' cd ..' <br/>
-' mkdir jars' <br/>
-' cp microproj/build/libs/docMicroservice-0.1.0.jar jars/' <br/>
+` cd ..` <br/>
+` mkdir jars` <br/>
+` cp microproj/build/libs/docMicroservice-0.1.0.jar jars/` <br/>
 
 
 
