@@ -4,10 +4,13 @@
 - You need 2 ubuntu nodes i.e. one host will be swarm master and other node will act as a worker node. 
 - Make sure docker service is installed on the host (say ubuntu). Refer [docker setup](dockerSetup.sh) file docker service installation.
 
+
 ### Setup
 
-1) Build microproj 
+Follow step 1 and 2 on both the nodes i.e. master and worker. 
 
+1) Build microproj 
+` git clone https://github.com/getreddy/docswarm.git`
 `cd microproj` <br />
 // Below command will build required jar files under microproj/build/libs <br />
 `gradlew clean && gradlew build` <br />
