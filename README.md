@@ -25,7 +25,7 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
 
 
 
-4) Create **overlay** network. 
+3) Create **overlay** network. 
   
   Docker introduced user-defined bridge networks to control which containers can communicate with each other, and also to   enable automatic DNS resolution of container names to IP addresses. 
   
@@ -35,7 +35,7 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
   
   `sudo docker network create  --attachable -d overlay overnet`
   
- 3) create **swarm cluster**. <br/>
+ 4) create **swarm cluster**. <br/>
 Run below command on master node : <br/>
 `sudo docker swarm init` <br/>
 copy and paste output of below command on worker node. <br/>
