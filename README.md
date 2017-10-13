@@ -2,7 +2,7 @@
 
 ### Prerequisites
 - You need 2 ubuntu nodes i.e. one host will be swarm master and other node will act as a worker node. 
-- Make sure docker service is installed on the host (say ubuntu). Refer [docker setup](dockerSetup.sh) file docker service installation.
+- Make sure docker service is installed on both the hosts . Refer [docker setup](dockerSetup.sh) file docker service installation.
 
 
 ### Setup
@@ -35,4 +35,15 @@ Follow step 1 and 2 on both the nodes i.e. master and worker.
   
   `sudo docker network create  --attachable -d overlay overnet`
   
- 3) create swarm cluster.
+ 3) create swarm cluster. <br/>
+- Run below command on master node : <br/>
+`sudo docker swarm init` <br/>
+copy and paste output of below command in worker node.
+`sudo docker swarm join-token worker` <br/>
+confirm the setup by running the below command on master node: <br/>
+` sudo docker node ls` <br/>
+
+
+
+
+
