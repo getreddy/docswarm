@@ -16,7 +16,9 @@
 ` mkdir jars` <br/>
 ` cp microproj/build/libs/docMicroservice-0.1.0.jar jars/` <br/>
 
-2) Build docker image
+2) Build docker image <br/>
+
+`sudo docker build -t ubuntuswarmtest .`
 
 
 
