@@ -51,10 +51,17 @@ confirm the setup by running the below command on master node: <br/>
 
 You can launch a service as a docker service. A service will be the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment. This service which we are launching is a simple microservice which just returns a "message" when you hit "curl http://servicename:8080. In below command, the service name is "systemservice".
 
-Below is the command which will create a docker service : <br / >
+You have 2 options of launching docker service. <br/>
+1) Using docker command line:
 Run below command on master node: <br/>
 
 `sudo docker service create --network overnet --detach=true --replicas 2 --publish 8080:8080 --name systemservice  ubuntuswarmtest  java -jar /opt/jars/docMicroservice-0.1.0.jar` <br/>
+
+2) Using **docker-compose** : <br/>
+using checked in [docker compose yml file](docker-compose.yml), run below command to launch services: <br/>
+
+`sudo docker stack deploy --compose-file docker-compose.yml stackdemo`
+
 
 When you deploy the service to the swarm, the swarm manager accepts your service definition as the desired state for the service. Then it schedules the service on nodes in the swarm as one or more replica (in above command its 2) tasks. The tasks run independently of each other on nodes in the swarm.  <br/>
 
