@@ -1,0 +1,18 @@
+version: '3'
+services:
+        systemservice:
+                build: .
+                image: ubuntuswarmtest
+                ports:
+                        - "8080:8080"
+                command: java -jar /opt/jars/docMicroservice-0.1.0.jar
+                networks:
+                         - overnet
+                deploy:
+                      replicas: 3
+
+networks:  
+  overnet:
+    external: true
+
+ 
