@@ -1,11 +1,11 @@
 # docswarm
 
-### Prerequisites
+## Prerequisites
 - You need 2 ubuntu nodes i.e. one host will be swarm master and other node will act as a worker node. 
 - Make sure docker service is installed on both the hosts . Refer [docker setup](dockerSetup.sh) file docker service installation.
 
 
-### Setup
+## Setup
 
 Follow step 1 and 2 on both the nodes i.e. master and worker. 
 
@@ -44,7 +44,7 @@ confirm the setup by running the below command on master node: <br/>
 ` sudo docker node ls` <br/> 
 
 
-### Launch a Microservice
+## Launch a Microservice
 
 You can launch a service as a docker service. A service will be the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment. This service which we are launching is a simple microservice which just returns a "message" when you hit "curl http://servicename:8080. In below command, the service name is "systemservice".
 
