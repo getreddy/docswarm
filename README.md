@@ -53,7 +53,23 @@ Run below command on master node: <br/>
 
 `sudo docker service create --network overnet --detach=true --replicas 2 --publish 8080:8080 --name systemservice  ubuntuswarmtest  java -jar /opt/jars/docMicroservice-0.1.0.jar` <br/>
 
-When you deploy the service to the swarm, the swarm manager accepts your service definition as the desired state for the service. Then it schedules the service on nodes in the swarm as one or more replica (in above command its 2) tasks. The tasks run independently of each other on nodes in the swarm. 
+When you deploy the service to the swarm, the swarm manager accepts your service definition as the desired state for the service. Then it schedules the service on nodes in the swarm as one or more replica (in above command its 2) tasks. The tasks run independently of each other on nodes in the swarm.  <br/>
+
+## Discovering containers on the same service or stack
+
+A container can always discover other containers on the same stack using just the container name as hostname. This includes containers of the same service. Similarly, a container can always discover other services on the same stack using the service name. <br/>
+
+Below is the example on how a new container launched under a same overlay network can **discover** above created service: <br/>
+Launch a container: <br/>
+
+`sudo docker run -it --network="overnet" ubuntuswarmtest /bin/bash` <br/>
+On the container prompt run: <br/>
+`curl http://systemservice:8080` you should see below output from the service: <br/>
+"Service...Root index API returned..need to work on build:-)"  <br/>
+
+
+
+
 
 
 
