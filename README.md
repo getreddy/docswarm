@@ -1,4 +1,7 @@
-# docswarm
+# Goal
+- Launch microservice using docker service 
+- Use overlay networks
+- Discovering containers 
 
 ## Prerequisites
 - You need 2 ubuntu nodes i.e. one host will be swarm master and other node will act as a worker node. 
