@@ -46,7 +46,7 @@ confirm the setup by running the below command on master node: <br/>
 
 ### Launch a Microservice
 
-You can launch a service as a docker service. A service will be the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment. This service which we are launching is a simple microservice which just returns a "message" when you hit "curl http://servicename:8080. 
+You can launch a service as a docker service. A service will be the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment. This service which we are launching is a simple microservice which just returns a "message" when you hit "curl http://servicename:8080. In below command, the service name is "systemservice".
 
 Below is the command which will create a docker service : <br / >
 Run below command on master node: <br/>
